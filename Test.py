@@ -15,7 +15,7 @@ api_key = os.getenv("ANTHROPIC_API_KEY")
 #if not api_key:
 #    raise ValueError("API key not loaded from .env")
 
-client = Anthropic(api_key="enter key here, couldnt get env working will fix later")
+client = Anthropic(api_key=api_key)
 
 response = client.messages.create(
     model="claude-3-opus-20240229",
